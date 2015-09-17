@@ -1,13 +1,259 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B4s-tg-e3G">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Monica Controller-->
+        <scene sceneID="m5Q-DA-3QV">
+            <objects>
+                <viewController id="K5T-qY-GTB" customClass="MonicaController" customModule="FriendsDating" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ofw-5T-U3I"/>
+                        <viewControllerLayoutGuide type="bottom" id="lnQ-v3-Q1e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P59-a2-vO3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monica" translatesAutoresizingMaskIntoConstraints="NO" id="bgB-0W-czn">
+                                <rect key="frame" x="46" y="58" width="509" height="367"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-N7-HtK">
+                                <rect key="frame" x="16" y="126" width="63" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="y4D-T9-wDQ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs down">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerYes:" destination="QMm-qH-Nre" eventType="touchUpInside" id="ato-Ab-t1O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jad-Y1-8A0">
+                                <rect key="frame" x="277" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B4s-tg-e3G" kind="show" id="E6I-hT-xA8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-Gs-48y">
+                                <rect key="frame" x="46" y="430" width="509" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="JkR-JP-g16"/>
+                                </constraints>
+                                <string key="text">Chandler Muriel Bing was born on April 8, 1968, to an erotic novelist mother and a transgender woman who later became the star of a Las Vegas drag show. He is of Scottish ancestry. He is an only child and is apparently from an affluent family, as he mentions his family hired servants such as a pool boy and a house boy (both of whom he suspects slept with his father). Chandler\'s parents announced their divorce to him over Thanksgiving dinner when he was nine years old, an event which causes him to refuse to celebrate the holiday in his adulthood. Chandler had started smoking at the age of 9 because of their divorce. He went to an all-boys high school.
+Chandler was Ross Geller\'s roommate in college. Chandler met his friend Rachel Green while celebrating Thanksgiving with the Geller family during his first year at college. On a tip from Monica, Chandler later moved to Apartment 19 in Greenwich Village, Manhattan, across the hall from Monica and her roommate Phoebe Buffay. He moves in with actor Joey Tribbiani, who becomes his best friend.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae2-kL-nbL">
+                                <rect key="frame" x="16" y="58" width="63" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JWs-wk-gR6"/>
+                                    <constraint firstAttribute="width" constant="63" id="yMw-eE-EIM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerYes:" destination="QMm-qH-Nre" eventType="touchUpInside" id="ug6-SG-ffp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ae2-kL-nbL" firstAttribute="leading" secondItem="P59-a2-vO3" secondAttribute="leadingMargin" id="14K-9R-JrZ"/>
+                            <constraint firstAttribute="bottom" secondItem="xSe-Gs-48y" secondAttribute="bottom" constant="20" symbolic="YES" id="5nH-6g-vEd"/>
+                            <constraint firstItem="fDO-N7-HtK" firstAttribute="top" secondItem="Ae2-kL-nbL" secondAttribute="bottom" constant="8" symbolic="YES" id="8jV-kG-aTt"/>
+                            <constraint firstItem="fDO-N7-HtK" firstAttribute="trailing" secondItem="Ae2-kL-nbL" secondAttribute="trailing" id="E8T-Y0-lU7"/>
+                            <constraint firstItem="bgB-0W-czn" firstAttribute="top" secondItem="Ae2-kL-nbL" secondAttribute="top" id="HvW-YC-F4z"/>
+                            <constraint firstItem="xSe-Gs-48y" firstAttribute="top" secondItem="bgB-0W-czn" secondAttribute="bottom" constant="5" id="ROm-uY-6Up"/>
+                            <constraint firstItem="bgB-0W-czn" firstAttribute="leading" secondItem="P59-a2-vO3" secondAttribute="leadingMargin" constant="30" id="Rqr-gV-Vmj"/>
+                            <constraint firstItem="xSe-Gs-48y" firstAttribute="trailing" secondItem="bgB-0W-czn" secondAttribute="trailing" id="VZh-Rp-rUb"/>
+                            <constraint firstItem="bgB-0W-czn" firstAttribute="centerX" secondItem="Jad-Y1-8A0" secondAttribute="centerX" id="ecl-8O-AE8"/>
+                            <constraint firstItem="Ae2-kL-nbL" firstAttribute="leading" secondItem="fDO-N7-HtK" secondAttribute="leading" id="pIj-yb-rRp"/>
+                            <constraint firstItem="Jad-Y1-8A0" firstAttribute="centerX" secondItem="P59-a2-vO3" secondAttribute="centerX" id="r1B-5A-h9e"/>
+                            <constraint firstItem="xSe-Gs-48y" firstAttribute="leading" secondItem="bgB-0W-czn" secondAttribute="leading" id="rr1-D4-0ex"/>
+                            <constraint firstItem="Ae2-kL-nbL" firstAttribute="top" secondItem="ofw-5T-U3I" secondAttribute="bottom" constant="38" id="x4Z-2z-q17"/>
+                            <constraint firstItem="bgB-0W-czn" firstAttribute="top" secondItem="Jad-Y1-8A0" secondAttribute="bottom" constant="8" symbolic="YES" id="yYo-eS-JsJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hym-vG-ZFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="548"/>
+        </scene>
+        <!--Rachel Controller-->
+        <scene sceneID="PUp-5p-RAP">
+            <objects>
+                <viewController id="IpN-eZ-DtN" customClass="RachelController" customModule="FriendsDating" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KOg-dS-bFd"/>
+                        <viewControllerLayoutGuide type="bottom" id="ytU-HM-BcZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x6b-jY-0ue">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcw-tm-uU8">
+                                <rect key="frame" x="16" y="126" width="63" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="M1B-2V-TpM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs down">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerNo:" destination="QMm-qH-Nre" eventType="touchUpInside" id="94e-YR-4oo"/>
+                                    <action selector="buttonRachelNo:" destination="IpN-eZ-DtN" eventType="touchUpInside" id="LOw-xg-afF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rachel" translatesAutoresizingMaskIntoConstraints="NO" id="bCT-Oo-d2m">
+                                <rect key="frame" x="46" y="58" width="509" height="367"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tos-QY-HWQ">
+                                <rect key="frame" x="46" y="433" width="509" height="159"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="4Tc-Tk-g4G"/>
+                                </constraints>
+                                <string key="text">Rachel Green worked as a barista at Central Perk cafe. During that time, her personality evolved from a spoiled egotist to a less self-centered and more likeable character. She grew from a suburban girl who dreamed of being the wife of a doctor and spending her time shopping, to that of a single mother with a career. She lost her virginity in the back of a van, before she had reached the tenth grade. Rachel also received plastic surgery on her nose, which she claims was due to a deviated septum.
+Rachel\'s focus on vanity comes at the expense of domestic skills or common knowledge. After she had worked at Central Perk for two and a half years Gunther forced Rachel to retrain, because she does not know the essentials of work, such as where to stack trays.
+Previously Rachel was being financially supported by her father and planning on marrying an orthodontist who would become the sole source of her income. Rachel broke off her engagement with Barry, because she realized on their wedding day that she didn\'t love him. After breaking off their engagement Rachel cut the credit cards her father gave her in half, leaving herself broke. Rachel found work as a waitress at Central Perk cafe but at times takes long breaks to sit with her friends and regularly gets orders confused. With encouragement from Joey and Chandler, Rachel later resigned from Central Perk to pursue a career in fashion. Joey then found her a job with Fortunata Fashions as a personal assistant. Later that season, she found work as an assistant buyer at the Department store Bloomingdale\'s with the help of colleague, Mark. Unfortunately after Mark resigns and her boss Joanna dies, she was demoted to personal shopper. She then left to start a career at Ralph Lauren as the coordinator of the women\'s collection. Ralph Lauren was impressed by her work and in "The One with Rachel\'s Assistant" she was promoted to merchandising manager, a position allowing her an assistant, Tag Jones, who shd has an affair with.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jje-Z2-f9r">
+                                <rect key="frame" x="277" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B4s-tg-e3G" kind="show" id="9rQ-Dt-Zfd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjp-HB-XeF">
+                                <rect key="frame" x="16" y="58" width="63" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="f4P-Se-iNN"/>
+                                    <constraint firstAttribute="height" constant="60" id="nnF-Lu-PRT"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerYes:" destination="QMm-qH-Nre" eventType="touchUpInside" id="gEl-3r-B7c"/>
+                                    <action selector="buttonRachelYes:" destination="IpN-eZ-DtN" eventType="touchUpInside" id="W2G-iY-IRg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jjp-HB-XeF" firstAttribute="top" secondItem="KOg-dS-bFd" secondAttribute="bottom" constant="38" id="DPi-Pn-3e8"/>
+                            <constraint firstItem="bCT-Oo-d2m" firstAttribute="top" secondItem="jjp-HB-XeF" secondAttribute="top" id="EWa-Qt-AsM"/>
+                            <constraint firstItem="ytU-HM-BcZ" firstAttribute="top" secondItem="tos-QY-HWQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Efv-H7-QHZ"/>
+                            <constraint firstItem="bCT-Oo-d2m" firstAttribute="leading" secondItem="x6b-jY-0ue" secondAttribute="leadingMargin" constant="30" id="GZI-w7-ui0"/>
+                            <constraint firstItem="tos-QY-HWQ" firstAttribute="top" secondItem="bCT-Oo-d2m" secondAttribute="bottom" constant="8" symbolic="YES" id="JVA-Me-Pud"/>
+                            <constraint firstItem="kcw-tm-uU8" firstAttribute="leading" secondItem="jjp-HB-XeF" secondAttribute="leading" id="Jpd-FI-EHn"/>
+                            <constraint firstItem="tos-QY-HWQ" firstAttribute="trailing" secondItem="bCT-Oo-d2m" secondAttribute="trailing" id="Lxi-fv-cSe"/>
+                            <constraint firstItem="bCT-Oo-d2m" firstAttribute="leading" secondItem="tos-QY-HWQ" secondAttribute="leading" id="fiK-jc-GX5"/>
+                            <constraint firstItem="jjp-HB-XeF" firstAttribute="trailing" secondItem="kcw-tm-uU8" secondAttribute="trailing" id="jgh-lx-oM0"/>
+                            <constraint firstItem="jje-Z2-f9r" firstAttribute="centerX" secondItem="bCT-Oo-d2m" secondAttribute="centerX" id="lL7-fR-HNU"/>
+                            <constraint firstItem="bCT-Oo-d2m" firstAttribute="top" secondItem="jje-Z2-f9r" secondAttribute="bottom" constant="8" symbolic="YES" id="nqS-oj-HXw"/>
+                            <constraint firstItem="kcw-tm-uU8" firstAttribute="top" secondItem="jjp-HB-XeF" secondAttribute="bottom" constant="8" symbolic="YES" id="pzt-4p-1Ih"/>
+                            <constraint firstItem="kcw-tm-uU8" firstAttribute="leading" secondItem="x6b-jY-0ue" secondAttribute="leadingMargin" id="rEt-HX-zx1"/>
+                            <constraint firstItem="bCT-Oo-d2m" firstAttribute="centerX" secondItem="x6b-jY-0ue" secondAttribute="centerX" id="vdQ-KP-9Mb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sse-UL-oTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="1262"/>
+        </scene>
+        <!--Joey Controller-->
+        <scene sceneID="wm8-GS-DHf">
+            <objects>
+                <viewController id="hXG-CP-8bO" customClass="JoeyController" customModule="FriendsDating" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="da1-9b-cgj"/>
+                        <viewControllerLayoutGuide type="bottom" id="1nm-rw-y6w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jFI-2R-BNM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrW-xV-CJL">
+                                <rect key="frame" x="16" y="28" width="94" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="u6r-o6-gK0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerYes:" destination="QMm-qH-Nre" eventType="touchUpInside" id="lWH-ca-2SB"/>
+                                    <action selector="buttonJoeyYes:" destination="hXG-CP-8bO" eventType="touchUpInside" id="WVQ-8b-9gB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYP-na-Kto">
+                                <rect key="frame" x="490" y="28" width="94" height="85"/>
+                                <state key="normal" title="Button" image="thumbs down">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerNo:" destination="QMm-qH-Nre" eventType="touchUpInside" id="0HA-V0-m9L"/>
+                                    <action selector="buttonJoeyNo:" destination="hXG-CP-8bO" eventType="touchUpInside" id="zg0-jB-aYb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joey" translatesAutoresizingMaskIntoConstraints="NO" id="a6o-Lx-44L">
+                                <rect key="frame" x="157" y="103" width="287" height="320"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qf9-s3-CRa">
+                                <rect key="frame" x="157" y="416" width="287" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Joey Francis "Joey" Tribbiani, Jr. was presumably born in 1969 as he talks about having turned 13 in 1982. He comes from an Italian American family of eight children. His father Joseph Tribbiani, Sr., after whom Joey is named, is a pipefitter and his mother\'s name is Gloria. Joey has seven sisters: Mary Therese, Mary Angela, Dina, Gina, Tina, Veronica, and Cookie. Joey is from, and was presumably born in Queens, New York. As a child, he was extremely accident prone. He also had an imaginary friend, Maurice, who was a space cowboy.
+Joey is promiscuous and dim-witted, but very loyal and protective of his friends. As a struggling actor, he is constantly looking for work. He was ordained as a minister in "The One with the Truth About London", and officiated at both Monica and Chandler and Phoebe and Mike\'s weddings. It is revealed in The One After "I Do" that Joey has size seven feet, which he is secretive and defensive about. He also has a soft toy penguin named Hugsy (his "bedtime penguin pal"), whom he is very fond of and does not like to share. He also doesn\'t like sharing food and has difficulty with simple mathematics (evidenced by his using a calculator to add together 500+500). In sports, Joey likes the Los Angeles Dodgers, New York Yankees, and briefly the New York Mets in baseball, Los Angeles Clippers and New York Knicks in basketball, New York Giants and New York Jets in football, and the Detroit Red Wings and New York Rangers in ice hockey.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1nm-rw-y6w" firstAttribute="top" secondItem="qf9-s3-CRa" secondAttribute="bottom" constant="8" symbolic="YES" id="5dc-9H-hL4"/>
+                            <constraint firstItem="1nm-rw-y6w" firstAttribute="top" secondItem="a6o-Lx-44L" secondAttribute="bottom" constant="177" id="Cwo-S7-g7O"/>
+                            <constraint firstItem="lYP-na-Kto" firstAttribute="top" secondItem="DrW-xV-CJL" secondAttribute="top" id="DIQ-Sc-orx"/>
+                            <constraint firstItem="DrW-xV-CJL" firstAttribute="top" secondItem="da1-9b-cgj" secondAttribute="bottom" constant="8" symbolic="YES" id="HeE-wt-2EQ"/>
+                            <constraint firstItem="a6o-Lx-44L" firstAttribute="leading" secondItem="qf9-s3-CRa" secondAttribute="leading" id="U81-6J-cJw"/>
+                            <constraint firstItem="a6o-Lx-44L" firstAttribute="top" secondItem="da1-9b-cgj" secondAttribute="bottom" constant="83" id="W0b-pB-5PO"/>
+                            <constraint firstItem="lYP-na-Kto" firstAttribute="trailing" secondItem="jFI-2R-BNM" secondAttribute="trailingMargin" id="aKh-dy-7au"/>
+                            <constraint firstItem="lYP-na-Kto" firstAttribute="leading" secondItem="a6o-Lx-44L" secondAttribute="trailing" constant="46" id="dd1-1D-z9a"/>
+                            <constraint firstItem="qf9-s3-CRa" firstAttribute="top" secondItem="da1-9b-cgj" secondAttribute="bottom" constant="396" id="e41-NK-BX2"/>
+                            <constraint firstItem="a6o-Lx-44L" firstAttribute="leading" secondItem="DrW-xV-CJL" secondAttribute="trailing" constant="47" id="eRR-cV-5oe"/>
+                            <constraint firstItem="a6o-Lx-44L" firstAttribute="trailing" secondItem="qf9-s3-CRa" secondAttribute="trailing" id="iiW-1H-u7Z"/>
+                            <constraint firstItem="lYP-na-Kto" firstAttribute="firstBaseline" secondItem="DrW-xV-CJL" secondAttribute="firstBaseline" id="kqy-5W-ulL"/>
+                            <constraint firstItem="1nm-rw-y6w" firstAttribute="top" secondItem="DrW-xV-CJL" secondAttribute="bottom" constant="487" id="oat-A7-2wg"/>
+                            <constraint firstItem="DrW-xV-CJL" firstAttribute="baseline" secondItem="lYP-na-Kto" secondAttribute="baseline" id="rRx-oV-FA1"/>
+                            <constraint firstItem="DrW-xV-CJL" firstAttribute="leading" secondItem="jFI-2R-BNM" secondAttribute="leadingMargin" id="sWr-2B-CYA"/>
+                            <constraint firstItem="a6o-Lx-44L" firstAttribute="centerX" secondItem="jFI-2R-BNM" secondAttribute="centerX" id="sso-Yy-qcE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0c-T7-IPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="-136"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FriendsDating" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +261,448 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Friendsdating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21f-e2-2qw">
+                                <rect key="frame" x="237" y="28" width="127" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="eFk-aq-8jP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Monica" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-2s-eE6">
+                                <rect key="frame" x="45" y="422" width="57" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CMz-dj-8yd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phoebe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5e-Wd-hCX">
+                                <rect key="frame" x="502" y="422" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rachel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRR-PD-QJc">
+                                <rect key="frame" x="47" y="559" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NhK-Vo-DTr"/>
+                                    <constraint firstAttribute="width" constant="53" id="gMV-m2-2xg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click on eligible single user to learn more and" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pF2-p1-kWj">
+                                <rect key="frame" x="16" y="60" width="349" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="349" id="q0u-kx-LYT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="see if you are compatible for a date!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaX-6p-CyS">
+                                <rect key="frame" x="16" y="89" width="275" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9tc-1s-Egu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chandler" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-nF-PPM">
+                                <rect key="frame" x="38" y="285" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fj3-DI-at0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcE-RL-PDh">
+                                <rect key="frame" x="21" y="177" width="105" height="100"/>
+                                <state key="normal" title="Button" image="chandlerpreview"/>
+                                <connections>
+                                    <segue destination="QMm-qH-Nre" kind="show" identifier="showChandler" id="GB2-Uc-CP4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ross" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9x-Gb-3J6">
+                                <rect key="frame" x="512" y="559" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLj-oK-gU2">
+                                <rect key="frame" x="479" y="314" width="105" height="100"/>
+                                <state key="normal" title="Button" image="phoebepreview"/>
+                                <connections>
+                                    <segue destination="DQ7-6H-wX8" kind="show" identifier="showPhoebe" id="aca-c1-zAw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Joey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jho-R3-Guv">
+                                <rect key="frame" x="513" y="285" width="37" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="C9M-0k-n66"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-mf-v08">
+                                <rect key="frame" x="479" y="177" width="105" height="100"/>
+                                <state key="normal" title="Button" image="joeypreview"/>
+                                <connections>
+                                    <segue destination="hXG-CP-8bO" kind="show" identifier="showJoey" id="ghW-B9-uck"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3I-RI-qxH">
+                                <rect key="frame" x="21" y="451" width="105" height="100"/>
+                                <state key="normal" title="Button" image="rachelpreview"/>
+                                <connections>
+                                    <segue destination="IpN-eZ-DtN" kind="show" identifier="showRacel" id="6kH-5W-iu7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puK-0r-aY8">
+                                <rect key="frame" x="479" y="451" width="105" height="100"/>
+                                <state key="normal" title="Button" image="rosspreview"/>
+                                <connections>
+                                    <segue destination="8Y8-aN-Q8K" kind="show" identifier="showRoss" id="adJ-XF-drZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLv-QC-ha3">
+                                <rect key="frame" x="21" y="314" width="105" height="100"/>
+                                <state key="normal" title="Button" image="monicapreview"/>
+                                <connections>
+                                    <segue destination="K5T-qY-GTB" kind="show" identifier="showMonica" id="u51-L0-tYu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M9x-Gb-3J6" firstAttribute="firstBaseline" secondItem="bRR-PD-QJc" secondAttribute="firstBaseline" id="18e-Tv-5bc"/>
+                            <constraint firstItem="jho-R3-Guv" firstAttribute="firstBaseline" secondItem="tbu-nF-PPM" secondAttribute="firstBaseline" id="2m0-vv-GCh"/>
+                            <constraint firstItem="g5e-Wd-hCX" firstAttribute="centerX" secondItem="vLj-oK-gU2" secondAttribute="centerX" id="2mA-OO-kA9"/>
+                            <constraint firstItem="vLj-oK-gU2" firstAttribute="baseline" secondItem="lLv-QC-ha3" secondAttribute="baseline" id="3mL-wW-peX"/>
+                            <constraint firstItem="4JD-2s-eE6" firstAttribute="top" secondItem="lLv-QC-ha3" secondAttribute="bottom" constant="8" symbolic="YES" id="6Em-a7-PaR"/>
+                            <constraint firstItem="B3I-RI-qxH" firstAttribute="top" secondItem="4JD-2s-eE6" secondAttribute="bottom" constant="8" symbolic="YES" id="745-Ro-euO"/>
+                            <constraint firstItem="puK-0r-aY8" firstAttribute="centerX" secondItem="M9x-Gb-3J6" secondAttribute="centerX" id="7cs-MN-enO"/>
+                            <constraint firstItem="4JD-2s-eE6" firstAttribute="baseline" secondItem="g5e-Wd-hCX" secondAttribute="baseline" id="8JH-RL-Lxm"/>
+                            <constraint firstItem="vLj-oK-gU2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AJn-sj-tKL"/>
+                            <constraint firstItem="puK-0r-aY8" firstAttribute="trailing" secondItem="vLj-oK-gU2" secondAttribute="trailing" id="D9h-dc-JLc"/>
+                            <constraint firstItem="21f-e2-2qw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DG7-8X-or3"/>
+                            <constraint firstItem="B3I-RI-qxH" firstAttribute="leading" secondItem="lLv-QC-ha3" secondAttribute="leading" id="FY3-YW-War"/>
+                            <constraint firstItem="jho-R3-Guv" firstAttribute="centerX" secondItem="wzX-mf-v08" secondAttribute="centerX" id="HYo-f5-60o"/>
+                            <constraint firstItem="wzX-mf-v08" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="157" id="Ix0-7y-XYo"/>
+                            <constraint firstItem="lLv-QC-ha3" firstAttribute="centerX" secondItem="4JD-2s-eE6" secondAttribute="centerX" id="P7b-9X-EXj"/>
+                            <constraint firstItem="lcE-RL-PDh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="PIt-I3-eqD"/>
+                            <constraint firstItem="pF2-p1-kWj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QKC-at-JJ7"/>
+                            <constraint firstItem="lLv-QC-ha3" firstAttribute="top" secondItem="tbu-nF-PPM" secondAttribute="bottom" constant="8" symbolic="YES" id="RDZ-mJ-H0K"/>
+                            <constraint firstItem="lLv-QC-ha3" firstAttribute="leading" secondItem="lcE-RL-PDh" secondAttribute="leading" id="SvB-5H-vJn"/>
+                            <constraint firstItem="UaX-6p-CyS" firstAttribute="leading" secondItem="pF2-p1-kWj" secondAttribute="leading" id="WSk-jB-Ua7"/>
+                            <constraint firstItem="lLv-QC-ha3" firstAttribute="trailing" secondItem="B3I-RI-qxH" secondAttribute="trailing" id="WzC-sF-fNv"/>
+                            <constraint firstItem="lcE-RL-PDh" firstAttribute="top" secondItem="UaX-6p-CyS" secondAttribute="bottom" constant="67" id="X4B-jY-XI8"/>
+                            <constraint firstItem="21f-e2-2qw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="a8P-5a-OIf"/>
+                            <constraint firstItem="wzX-mf-v08" firstAttribute="trailing" secondItem="vLj-oK-gU2" secondAttribute="trailing" id="bmg-Cv-qEa"/>
+                            <constraint firstItem="tbu-nF-PPM" firstAttribute="top" secondItem="lcE-RL-PDh" secondAttribute="bottom" constant="8" symbolic="YES" id="byJ-vo-2iK"/>
+                            <constraint firstItem="pF2-p1-kWj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="ePd-0w-Fpt"/>
+                            <constraint firstItem="lcE-RL-PDh" firstAttribute="top" secondItem="wzX-mf-v08" secondAttribute="top" id="f3D-ME-g4q"/>
+                            <constraint firstItem="B3I-RI-qxH" firstAttribute="baseline" secondItem="puK-0r-aY8" secondAttribute="baseline" id="fb3-aJ-Fq5"/>
+                            <constraint firstItem="UaX-6p-CyS" firstAttribute="top" secondItem="21f-e2-2qw" secondAttribute="bottom" constant="24" id="guy-bi-5b8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jho-R3-Guv" secondAttribute="trailing" constant="34" id="hc1-tv-pkE"/>
+                            <constraint firstItem="wzX-mf-v08" firstAttribute="leading" secondItem="vLj-oK-gU2" secondAttribute="leading" id="i72-8p-FTD"/>
+                            <constraint firstItem="bRR-PD-QJc" firstAttribute="top" secondItem="B3I-RI-qxH" secondAttribute="bottom" constant="8" symbolic="YES" id="j63-oC-qqD"/>
+                            <constraint firstItem="bRR-PD-QJc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="kOH-u3-kaM"/>
+                            <constraint firstItem="tbu-nF-PPM" firstAttribute="baseline" secondItem="jho-R3-Guv" secondAttribute="baseline" id="nhk-n2-I9p"/>
+                            <constraint firstItem="lcE-RL-PDh" firstAttribute="trailing" secondItem="lLv-QC-ha3" secondAttribute="trailing" id="o37-jD-CFh"/>
+                            <constraint firstItem="tbu-nF-PPM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="o6b-H5-V03"/>
+                            <constraint firstItem="B3I-RI-qxH" firstAttribute="centerX" secondItem="bRR-PD-QJc" secondAttribute="centerX" id="ohm-YT-U8I"/>
+                            <constraint firstItem="4JD-2s-eE6" firstAttribute="firstBaseline" secondItem="g5e-Wd-hCX" secondAttribute="firstBaseline" id="rLf-Op-My5"/>
+                            <constraint firstItem="UaX-6p-CyS" firstAttribute="top" secondItem="pF2-p1-kWj" secondAttribute="bottom" constant="8" symbolic="YES" id="umw-Rr-cZe"/>
+                            <constraint firstItem="puK-0r-aY8" firstAttribute="leading" secondItem="vLj-oK-gU2" secondAttribute="leading" id="yZ7-xQ-ccJ"/>
+                            <constraint firstItem="lcE-RL-PDh" firstAttribute="centerX" secondItem="tbu-nF-PPM" secondAttribute="centerX" id="zPG-rN-ByH"/>
+                            <constraint firstItem="4JD-2s-eE6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="zRa-E7-PDl"/>
+                            <constraint firstItem="M9x-Gb-3J6" firstAttribute="baseline" secondItem="bRR-PD-QJc" secondAttribute="baseline" id="zfs-mE-t1j"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Vah-4g-PXY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1270" y="372"/>
+        </scene>
+        <!--Phoebe Controller-->
+        <scene sceneID="wqT-uI-T6q">
+            <objects>
+                <viewController id="DQ7-6H-wX8" customClass="PhoebeController" customModule="FriendsDating" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4GA-Pc-hIP"/>
+                        <viewControllerLayoutGuide type="bottom" id="csX-8C-FbD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NI3-Zr-Wgg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItV-uC-SIN">
+                                <rect key="frame" x="490" y="28" width="94" height="85"/>
+                                <state key="normal" title="Button" image="thumbs down">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerNo:" destination="QMm-qH-Nre" eventType="touchUpInside" id="ERd-jD-JuU"/>
+                                    <action selector="buttonPhoebeNo:" destination="DQ7-6H-wX8" eventType="touchUpInside" id="48i-js-hph"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoebe" translatesAutoresizingMaskIntoConstraints="NO" id="vRx-Ml-Rcm">
+                                <rect key="frame" x="157" y="103" width="287" height="320"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G99-dG-WCX">
+                                <rect key="frame" x="157" y="416" width="287" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Phoebe Buffay is the younger twin daughter born to Phoebe Abbott and Frank Buffay, circa 1970; her identical twin sister Ursula, was born one minute earlier. Frank was married to Abbott\'s best friend, the unstable Lily, at the time; Lily adopted Phoebe and Ursula. She is from upstate New York, her father abandoned the family when she was very young, and Lily remarried an unnamed man. She mentions that her family was very poor (her stepfather sold his blood on her birthday to buy them food) and claims that her mother was a drug dealer. Lily committed suicide when Phoebe and Ursula were thirteen, by carbon monoxide poisoning; afterward their stepfather went to prison. She occasionally mentions Lily\'s strange behavior and methods of raising her children. By age 15, Phoebe was living on the streets. Her relationship with Ursula appears strained, ostensibly due to the latter\'s personality, which is portrayed as markedly aloof by comparison.
+Phoebe lived in many locations including an abandoned Buick LeSabre, an AMC Gremlin with "a guy named Cindy who talked to his hand," and with an albino man who washed windows outside the Port Authority Bus Terminal. She did not attend high school or college, but claimed that she met behind a dumpster with a small group to learn French, in which she is fluent. Phoebe occasionally resorted to mugging to survive; at one point, when she was 14, she mugged her later good friend Ross Geller near a comic shop, stealing the only copy of Ross\' comic Science Boy, which she claims "taught me well". Phoebe also mentions that she once lived in Prague, Czech Republic but refuses to discuss it further. She also claims that she contracted hepatitis when a pimp spat in her mouth; was stabbed by a police officer, whom she stabbed in return; learned to box at a YMCA; has been tortured; and at one point made sombreros (and got called "bad little white girl" by her employer for not making them big enough).
+Phoebe moved in with Monica Geller after answering a roommate want ad, which began their friendship. While living with Monica, she married a man named Duncan Sullivan, a gay Canadian ice dancer, in order to help him obtain a green card. He later revealed that he is straight, and was just pretending to be gay "to fit in", resulting in a divorce, although Phoebe had genuine feelings for him. She moved out when she could no longer handle Monica\'s controlling tendencies, choosing to live with her grandmother in her apartment. After her grandmother\'s death, Phoebe inherited the apartment and her yellow taxicab.
+Phoebe also has a younger half-brother, Frank Buffay Jr. Phoebe served as a surrogate mother for Frank and his older wife Alice, who is also his former schoolteacher, eventually giving birth to their triplets.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAE-Qp-yqL">
+                                <rect key="frame" x="16" y="28" width="94" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="g8p-9V-TV3"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerYes:" destination="QMm-qH-Nre" eventType="touchUpInside" id="4wg-3G-SJ3"/>
+                                    <action selector="buttonPhoebeYes:" destination="DQ7-6H-wX8" eventType="touchUpInside" id="DzY-8z-uiI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vRx-Ml-Rcm" firstAttribute="trailing" secondItem="G99-dG-WCX" secondAttribute="trailing" id="7f3-u3-mbF"/>
+                            <constraint firstItem="G99-dG-WCX" firstAttribute="centerX" secondItem="NI3-Zr-Wgg" secondAttribute="centerX" id="BfO-1n-T4v"/>
+                            <constraint firstItem="csX-8C-FbD" firstAttribute="top" secondItem="vRx-Ml-Rcm" secondAttribute="bottom" constant="177" id="CUu-9I-XyS"/>
+                            <constraint firstItem="ItV-uC-SIN" firstAttribute="leading" secondItem="vRx-Ml-Rcm" secondAttribute="trailing" constant="46" id="DNa-XT-CPC"/>
+                            <constraint firstItem="wAE-Qp-yqL" firstAttribute="top" secondItem="4GA-Pc-hIP" secondAttribute="bottom" constant="8" symbolic="YES" id="GOm-eA-KDu"/>
+                            <constraint firstItem="wAE-Qp-yqL" firstAttribute="top" secondItem="ItV-uC-SIN" secondAttribute="top" id="L4z-Zr-Eza"/>
+                            <constraint firstItem="ItV-uC-SIN" firstAttribute="firstBaseline" secondItem="wAE-Qp-yqL" secondAttribute="firstBaseline" id="TRt-u5-3Nr"/>
+                            <constraint firstItem="wAE-Qp-yqL" firstAttribute="baseline" secondItem="ItV-uC-SIN" secondAttribute="baseline" id="XNv-FL-2EW"/>
+                            <constraint firstItem="csX-8C-FbD" firstAttribute="top" secondItem="wAE-Qp-yqL" secondAttribute="bottom" constant="487" id="YGq-SY-FNz"/>
+                            <constraint firstItem="wAE-Qp-yqL" firstAttribute="leading" secondItem="NI3-Zr-Wgg" secondAttribute="leadingMargin" id="Zmf-Zb-LEm"/>
+                            <constraint firstItem="vRx-Ml-Rcm" firstAttribute="leading" secondItem="wAE-Qp-yqL" secondAttribute="trailing" constant="47" id="aUW-ke-QSc"/>
+                            <constraint firstItem="G99-dG-WCX" firstAttribute="top" secondItem="4GA-Pc-hIP" secondAttribute="bottom" constant="396" id="fFj-ba-tFX"/>
+                            <constraint firstItem="vRx-Ml-Rcm" firstAttribute="top" secondItem="4GA-Pc-hIP" secondAttribute="bottom" constant="83" id="fSt-IF-UTb"/>
+                            <constraint firstItem="G99-dG-WCX" firstAttribute="leading" secondItem="vRx-Ml-Rcm" secondAttribute="leading" id="hVB-dW-Xad"/>
+                            <constraint firstItem="ItV-uC-SIN" firstAttribute="trailing" secondItem="NI3-Zr-Wgg" secondAttribute="trailingMargin" id="kqr-Bi-eid"/>
+                            <constraint firstItem="csX-8C-FbD" firstAttribute="top" secondItem="G99-dG-WCX" secondAttribute="bottom" constant="8" symbolic="YES" id="lHq-e5-pGC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YqD-F3-Rp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="541"/>
+        </scene>
+        <!--Ross Controller-->
+        <scene sceneID="cVH-fq-eKA">
+            <objects>
+                <viewController id="8Y8-aN-Q8K" customClass="RossController" customModule="FriendsDating" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZSu-W8-Gmc"/>
+                        <viewControllerLayoutGuide type="bottom" id="dtY-Lf-5nt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NJe-1A-TxG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="846-L9-Tfq">
+                                <rect key="frame" x="16" y="28" width="94" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="6V4-Xn-Zyw"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerYes:" destination="QMm-qH-Nre" eventType="touchUpInside" id="wbH-E2-61o"/>
+                                    <action selector="buttonRossYes:" destination="8Y8-aN-Q8K" eventType="touchUpInside" id="WRh-Yw-M4b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh3-jZ-qeu">
+                                <rect key="frame" x="490" y="28" width="94" height="85"/>
+                                <state key="normal" title="Button" image="thumbs down">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerNo:" destination="QMm-qH-Nre" eventType="touchUpInside" id="y4a-1R-zlo"/>
+                                    <action selector="buttonRossNo:" destination="8Y8-aN-Q8K" eventType="touchUpInside" id="M68-0Z-V85"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ross" translatesAutoresizingMaskIntoConstraints="NO" id="IhW-5H-AQb">
+                                <rect key="frame" x="157" y="103" width="287" height="320"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBw-8e-N6T">
+                                <rect key="frame" x="157" y="415" width="287" height="177"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Ross Eustace Geller, Ph.D. is the smartest member of his group of friends and is noted for his geeky, lovable demeanor. Ross is a paleontologist and has a Ph.D. from Columbia University, frequently referring to himself as "Dr. Ross Geller." Ross is noted for being geeky, charming, lovelorn, witty and shy. Ross has had a crush on Rachel Green since high school and they have an on-again, off-again romantic relationship.
+Born and raised on Long Island, New York, Ross is the older brother of Monica Geller. Ross and Monica are Jewish and see themselves as at least cultural Jews, with Ross taking a more active role in wanting to teach his son, Ben, about the faith.
+The two siblings are extremely competitive as they tell the others that, as children, they used to take part in a football match for the Geller Cup every Thanksgiving. This ended in its sixth year after Monica "accidentally" broke Ross\' nose. They also tell Rachel about how they used to wrestle as children and had various complications in their relationship, such as Ross having a recurring nightmare that the then-overweight Monica would eat him. They also came up with a dance in primary school called "The Routine", which later on allowed them to perform in a New Year\'s Eve TV broadcast.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fBw-8e-N6T" firstAttribute="centerX" secondItem="NJe-1A-TxG" secondAttribute="centerX" id="8HP-9N-QL5"/>
+                            <constraint firstItem="846-L9-Tfq" firstAttribute="top" secondItem="yh3-jZ-qeu" secondAttribute="top" id="9qD-mt-ftp"/>
+                            <constraint firstItem="dtY-Lf-5nt" firstAttribute="top" secondItem="fBw-8e-N6T" secondAttribute="bottom" constant="8" symbolic="YES" id="CIR-aX-tKE"/>
+                            <constraint firstItem="yh3-jZ-qeu" firstAttribute="firstBaseline" secondItem="846-L9-Tfq" secondAttribute="firstBaseline" id="GVl-O0-5oF"/>
+                            <constraint firstItem="yh3-jZ-qeu" firstAttribute="leading" secondItem="IhW-5H-AQb" secondAttribute="trailing" constant="46" id="L1g-AZ-U3C"/>
+                            <constraint firstItem="fBw-8e-N6T" firstAttribute="leading" secondItem="IhW-5H-AQb" secondAttribute="leading" id="NNh-zt-x7B"/>
+                            <constraint firstItem="yh3-jZ-qeu" firstAttribute="baseline" secondItem="846-L9-Tfq" secondAttribute="baseline" id="T4U-Tj-5ln"/>
+                            <constraint firstItem="fBw-8e-N6T" firstAttribute="top" secondItem="ZSu-W8-Gmc" secondAttribute="bottom" constant="395" id="TwU-XH-KzW"/>
+                            <constraint firstItem="IhW-5H-AQb" firstAttribute="leading" secondItem="846-L9-Tfq" secondAttribute="trailing" constant="47" id="Wi3-1B-aMx"/>
+                            <constraint firstItem="846-L9-Tfq" firstAttribute="top" secondItem="ZSu-W8-Gmc" secondAttribute="bottom" constant="8" symbolic="YES" id="eMS-3D-wpO"/>
+                            <constraint firstItem="fBw-8e-N6T" firstAttribute="trailing" secondItem="IhW-5H-AQb" secondAttribute="trailing" id="hDS-xO-jde"/>
+                            <constraint firstItem="yh3-jZ-qeu" firstAttribute="trailing" secondItem="NJe-1A-TxG" secondAttribute="trailingMargin" id="rjs-fz-Mnv"/>
+                            <constraint firstItem="dtY-Lf-5nt" firstAttribute="top" secondItem="IhW-5H-AQb" secondAttribute="bottom" constant="177" id="sN0-OI-6Kc"/>
+                            <constraint firstItem="dtY-Lf-5nt" firstAttribute="top" secondItem="846-L9-Tfq" secondAttribute="bottom" constant="487" id="t1i-dd-W8o"/>
+                            <constraint firstItem="IhW-5H-AQb" firstAttribute="top" secondItem="ZSu-W8-Gmc" secondAttribute="bottom" constant="83" id="yOZ-66-iwD"/>
+                            <constraint firstItem="846-L9-Tfq" firstAttribute="leading" secondItem="NJe-1A-TxG" secondAttribute="leadingMargin" id="zBu-Lo-mVD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGm-LS-I8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="1208"/>
+        </scene>
+        <!--Chandler Controller-->
+        <scene sceneID="Cp8-YK-uuA">
+            <objects>
+                <viewController id="QMm-qH-Nre" customClass="ChandlerController" customModule="FriendsDating" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EvP-Ng-W8R"/>
+                        <viewControllerLayoutGuide type="bottom" id="LGB-j2-5lV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="29X-eE-061">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOR-gh-UjM">
+                                <rect key="frame" x="521" y="58" width="63" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KKB-u5-4DK"/>
+                                    <constraint firstAttribute="width" constant="63" id="MBs-3l-woQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="sK1-KF-R3b"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs down">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerNo:" destination="QMm-qH-Nre" eventType="touchUpInside" id="pad-tI-bwK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vpg-el-pYB">
+                                <rect key="frame" x="46" y="430" width="509" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="C6U-oJ-3Bc"/>
+                                </constraints>
+                                <string key="text">Chandler Muriel Bing was born on April 8, 1968, to an erotic novelist mother and a transgender woman who later became the star of a Las Vegas drag show. He is of Scottish ancestry. He is an only child and is apparently from an affluent family, as he mentions his family hired servants such as a pool boy and a house boy (both of whom he suspects slept with his father). Chandler\'s parents announced their divorce to him over Thanksgiving dinner when he was nine years old, an event which causes him to refuse to celebrate the holiday in his adulthood. Chandler had started smoking at the age of 9 because of their divorce. He went to an all-boys high school.
+Chandler was Ross Geller\'s roommate in college. Chandler met his friend Rachel Green while celebrating Thanksgiving with the Geller family during his first year at college. On a tip from Monica, Chandler later moved to Apartment 19 in Greenwich Village, Manhattan, across the hall from Monica and her roommate Phoebe Buffay. He moves in with actor Joey Tribbiani, who becomes his best friend.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwi-k6-EYh">
+                                <rect key="frame" x="277" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B4s-tg-e3G" kind="show" id="rKb-9I-i3f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJn-lp-jmk">
+                                <rect key="frame" x="16" y="58" width="63" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="49c-Cs-hcl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="bq2-t3-whE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="j5c-8V-6rN"/>
+                                    <constraint firstAttribute="height" constant="60" id="ySx-hw-yHd"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="thumbs up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChandlerYes:" destination="QMm-qH-Nre" eventType="touchUpInside" id="xfn-lX-77T"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="chandler" translatesAutoresizingMaskIntoConstraints="NO" id="F5q-au-dOT">
+                                <rect key="frame" x="46" y="58" width="509" height="367"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F5q-au-dOT" secondAttribute="height" multiplier="509:367" id="xLH-qy-P7e"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Vpg-el-pYB" secondAttribute="bottom" constant="20" symbolic="YES" id="6X1-iQ-V4n"/>
+                            <constraint firstItem="cOR-gh-UjM" firstAttribute="trailing" secondItem="29X-eE-061" secondAttribute="trailingMargin" id="8J8-KT-44w"/>
+                            <constraint firstItem="BJn-lp-jmk" firstAttribute="firstBaseline" secondItem="cOR-gh-UjM" secondAttribute="firstBaseline" id="FsY-Bh-udO"/>
+                            <constraint firstItem="BJn-lp-jmk" firstAttribute="leading" secondItem="29X-eE-061" secondAttribute="leadingMargin" id="IjD-cL-aB8"/>
+                            <constraint firstItem="cOR-gh-UjM" firstAttribute="baseline" secondItem="BJn-lp-jmk" secondAttribute="baseline" id="SyT-PZ-roJ"/>
+                            <constraint firstItem="F5q-au-dOT" firstAttribute="leading" secondItem="BJn-lp-jmk" secondAttribute="trailing" constant="-33" id="Wah-qg-FDV"/>
+                            <constraint firstItem="BJn-lp-jmk" firstAttribute="top" secondItem="EvP-Ng-W8R" secondAttribute="bottom" constant="38" id="ojR-2G-jxi"/>
+                            <constraint firstItem="cOR-gh-UjM" firstAttribute="leading" secondItem="F5q-au-dOT" secondAttribute="trailing" constant="-34" id="sZF-BU-rDT"/>
+                            <constraint firstItem="F5q-au-dOT" firstAttribute="top" secondItem="Dwi-k6-EYh" secondAttribute="bottom" constant="8" id="uzG-VD-OeT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AwI-PZ-37U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="-136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YG3-O1-ct0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B4s-tg-e3G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m4v-bL-fDK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z3O-JU-Yr7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5A-yu-nMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="372"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chandler" width="400" height="400"/>
+        <image name="chandlerpreview" width="100" height="100"/>
+        <image name="joey" width="400" height="400"/>
+        <image name="joeypreview" width="100" height="100"/>
+        <image name="monica" width="400" height="400"/>
+        <image name="monicapreview" width="100" height="100"/>
+        <image name="phoebe" width="400" height="400"/>
+        <image name="phoebepreview" width="100" height="100"/>
+        <image name="rachel" width="400" height="400"/>
+        <image name="rachelpreview" width="100" height="100"/>
+        <image name="ross" width="400" height="400"/>
+        <image name="rosspreview" width="100" height="100"/>
+        <image name="thumbs down" width="342" height="348"/>
+        <image name="thumbs up" width="389" height="356"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rKb-9I-i3f"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,12 @@
 		35FFA8A81BA9F8B9009F744F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FFA8A71BA9F8B9009F744F /* Images.xcassets */; };
 		35FFA8AB1BA9F8B9009F744F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35FFA8A91BA9F8B9009F744F /* LaunchScreen.xib */; };
 		35FFA8B71BA9F8B9009F744F /* FriendsDatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFA8B61BA9F8B9009F744F /* FriendsDatingTests.swift */; };
+		35FFA8C51BAA0157009F744F /* ChandlerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFA8C41BAA0157009F744F /* ChandlerController.swift */; };
+		35FFA8CB1BAA0E8C009F744F /* MonicaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFA8CA1BAA0E8C009F744F /* MonicaController.swift */; };
+		35FFA8CD1BAA0EAE009F744F /* RachelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFA8CC1BAA0EAE009F744F /* RachelController.swift */; };
+		35FFA8CF1BAA0EC2009F744F /* JoeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFA8CE1BAA0EC2009F744F /* JoeyController.swift */; };
+		35FFA8D11BAA0ED6009F744F /* PhoebeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFA8D01BAA0ED6009F744F /* PhoebeController.swift */; };
+		35FFA8D31BAA0EE3009F744F /* RossController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FFA8D21BAA0EE3009F744F /* RossController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		35FFA8B01BA9F8B9009F744F /* FriendsDatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsDatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FFA8B51BA9F8B9009F744F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FFA8B61BA9F8B9009F744F /* FriendsDatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsDatingTests.swift; sourceTree = "<group>"; };
+		35FFA8C41BAA0157009F744F /* ChandlerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChandlerController.swift; sourceTree = "<group>"; };
+		35FFA8CA1BAA0E8C009F744F /* MonicaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonicaController.swift; sourceTree = "<group>"; };
+		35FFA8CC1BAA0EAE009F744F /* RachelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RachelController.swift; sourceTree = "<group>"; };
+		35FFA8CE1BAA0EC2009F744F /* JoeyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoeyController.swift; sourceTree = "<group>"; };
+		35FFA8D01BAA0ED6009F744F /* PhoebeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoebeController.swift; sourceTree = "<group>"; };
+		35FFA8D21BAA0EE3009F744F /* RossController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RossController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,12 @@
 			children = (
 				35FFA8A01BA9F8B9009F744F /* AppDelegate.swift */,
 				35FFA8A21BA9F8B9009F744F /* ViewController.swift */,
+				35FFA8C41BAA0157009F744F /* ChandlerController.swift */,
+				35FFA8CA1BAA0E8C009F744F /* MonicaController.swift */,
+				35FFA8CC1BAA0EAE009F744F /* RachelController.swift */,
+				35FFA8D01BAA0ED6009F744F /* PhoebeController.swift */,
+				35FFA8CE1BAA0EC2009F744F /* JoeyController.swift */,
+				35FFA8D21BAA0EE3009F744F /* RossController.swift */,
 				35FFA8A41BA9F8B9009F744F /* Main.storyboard */,
 				35FFA8A71BA9F8B9009F744F /* Images.xcassets */,
 				35FFA8A91BA9F8B9009F744F /* LaunchScreen.xib */,
@@ -212,8 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FFA8CB1BAA0E8C009F744F /* MonicaController.swift in Sources */,
+				35FFA8D11BAA0ED6009F744F /* PhoebeController.swift in Sources */,
+				35FFA8D31BAA0EE3009F744F /* RossController.swift in Sources */,
 				35FFA8A31BA9F8B9009F744F /* ViewController.swift in Sources */,
+				35FFA8CF1BAA0EC2009F744F /* JoeyController.swift in Sources */,
+				35FFA8CD1BAA0EAE009F744F /* RachelController.swift in Sources */,
 				35FFA8A11BA9F8B9009F744F /* AppDelegate.swift in Sources */,
+				35FFA8C51BAA0157009F744F /* ChandlerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
