@@ -16,6 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        // Check if defaults are set
+        if (defaults.stringForKey("set") == nil) {
+            
+            
+            // Create friends dictionary
+            var friends: Dictionary<String, String> = [
+                "Joey": "Like?",
+                "Ross": "Like?",
+                "Chandler": "Like?",
+                "Rachel": "Like?",
+                "Monica": "Like?",
+                "Phoebe": "Like?"
+            ]
+            
+            defaults.setObject(friends, forKey: "friends")
+            
+            defaults.setObject(true, forKey: "set")
+        }
+        
         return true
     }
 

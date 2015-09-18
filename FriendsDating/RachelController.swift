@@ -9,8 +9,6 @@
 import UIKit
 
 class RachelController: UIViewController {
-
-    var rachelYesOrNo: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +22,17 @@ class RachelController: UIViewController {
     }
     
     @IBAction func buttonRachelYes(sender: AnyObject) {
-        rachelYesOrNo = "Yes"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Rachel"] = "Yes"
+        defaults.setObject(friends, forKey: "friends")
     }
 
     @IBAction func buttonRachelNo(sender: AnyObject) {
-        rachelYesOrNo = "No"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Rachel"] = "No"
+        defaults.setObject(friends, forKey: "friends")
     }
     /*
     // MARK: - Navigation

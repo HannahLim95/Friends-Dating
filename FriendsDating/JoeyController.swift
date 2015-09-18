@@ -9,8 +9,6 @@
 import UIKit
 
 class JoeyController: UIViewController {
-
-    var joeyYesOrNo: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +22,20 @@ class JoeyController: UIViewController {
     }
     
     @IBAction func buttonJoeyYes(sender: AnyObject) {
-        joeyYesOrNo = "Yes"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Joey"] = "Yes"
+        defaults.setObject(friends, forKey: "friends")
     }
 
     @IBAction func buttonJoeyNo(sender: AnyObject) {
-        joeyYesOrNo = "No"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Joey"] = "No"
+        defaults.setObject(friends, forKey: "friends")
     }
+    
+    
     /*
     // MARK: - Navigation
 

@@ -10,8 +10,6 @@ import UIKit
 
 class PhoebeController: UIViewController {
 
-    var phoebeYesOrNo: String?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,13 +22,23 @@ class PhoebeController: UIViewController {
     }
     
     @IBAction func buttonPhoebeYes(sender: AnyObject) {
-        phoebeYesOrNo = "Yes"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Phoebe"] = "Yes"
+        defaults.setObject(friends, forKey: "friends")
     }
     
     @IBAction func buttonPhoebeNo(sender: AnyObject) {
-        phoebeYesOrNo = "No"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Phoebe"] = "No"
+        defaults.setObject(friends, forKey: "friends")
     }
 
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

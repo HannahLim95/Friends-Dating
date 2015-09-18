@@ -10,7 +10,6 @@ import UIKit
 
 class RossController: UIViewController {
 
-    var rossYerOrNO: String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,12 +21,20 @@ class RossController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func buttonRossYes(sender: AnyObject) {
-        rossYerOrNO = "Yes"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Ross"] = "Yes"
+        defaults.setObject(friends, forKey: "friends")
     }
     
     @IBAction func buttonRossNo(sender: AnyObject) {
-        rossYerOrNO = "No"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Ross"] = "No"
+        defaults.setObject(friends, forKey: "friends")
     }
+    
+    
 
     /*
     // MARK: - Navigation

@@ -9,8 +9,6 @@
 import UIKit
 
 class MonicaController: UIViewController {
-
-    var monicaYesOrNo: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +22,17 @@ class MonicaController: UIViewController {
     }
     
     @IBAction func buttonMonicaYes(sender: AnyObject) {
-        monicaYesOrNo = "Yes"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Monica"] = "Yes"
+        defaults.setObject(friends, forKey: "friends")
     }
 
     @IBAction func buttonMonicaNo(sender: AnyObject) {
-        monicaYesOrNo = "No"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Monica"] = "No"
+        defaults.setObject(friends, forKey: "friends")
     }
     /*
     // MARK: - Navigation

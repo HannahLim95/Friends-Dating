@@ -9,8 +9,6 @@
 import UIKit
 
 class ChandlerController: UIViewController {
-
-    var chandlerYesOrNo: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +22,17 @@ class ChandlerController: UIViewController {
     }
 
     @IBAction func buttonChandlerYes(sender: AnyObject) {
-        chandlerYesOrNo = "Yes"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Chandler"] = "Yes"
+        defaults.setObject(friends, forKey: "friends")
     }
     
     @IBAction func buttonChandlerNo(sender: AnyObject) {
-        chandlerYesOrNo = "No"
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var friends = defaults.dictionaryForKey("friends") as! Dictionary<String, String>
+        friends["Chandler"] = "No"
+        defaults.setObject(friends, forKey: "friends")
     }
 
     /*
